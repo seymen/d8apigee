@@ -93,6 +93,12 @@ Use the following details:
 
 Note: If the content does not render correctly, try clearing the cache by navigating to Configuration > Development > Performance and clicking Clear all caches.
 
+Note: If you can't see the "Try it out" button:
+```
+vi modules/contrib/swagger_ui_formatter/js/swagger_ui_formatter.js
+field.supportedSubmitMethods = ['get','post','put','delete']; //line 30
+```
+
 
 ## Other activites
 Now all the defaults are in place for Developer or App Registration etc. Docs for configuring the defaults are here: https://www.drupal.org/docs/8/modules/apigee-edge
